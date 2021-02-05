@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TÜRGEDEB | Design Generator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="loading-style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="inputs">
+            <form id="formSubmit">
+                <div class="inputs-inner">
+                        <h1>Boşlukları doldurun ve tasarımı oluşturunuz</h1>
+                        <div class="name-magazine">
+                            <span>İsim</span>
+                            <input type="text" required placeholder="Örn. Ahmet'e" id="nameWriterINPUT">
+                            <span>Dergi</span>
+                            <input type="text" required placeholder="Örn. Taşra" id="nameMagazineINPUT">
+                        </div>
+                        <h3>Film Görseli URL</h3>
+                        <div class="image-file-input">
+                            <input id="filmURLINPUT" type="text" placeholder="https://www.turgedeb.com/ornek.png" style="display: inline;">
+                            <input type="file" class="custom-file-input" id="filmfileURLINPUT">
+                        </div>
+                        <h3>Film Başlığı</h3>
+                        <input id="filmTitleINPUT" type="text" required placeholder="Örn. Gone Girl">
+                        <h3>Yönetmen</h3>
+                        <input id="directorINPUT" type="text" required placeholder="Örn. David Fincher">
+                        <h3>Kitap Görseli URL</h3>
+                        <div class="image-file-input">                            
+                            <input id="bookURLINPUT" type="text" placeholder="https://www.turgedeb.com/ornek.png">
+                            <input type="file" class="custom-file-input" id="bookfileURLINPUT">
+                        </div>
+                        <h3>Kitap İsmi</h3>
+                        <input id="bookTitleINPUT" type="text" required placeholder="Örn. Malihülya">
+                        <h3>Yazar</h3>
+                        <input id="writterINPUT" type="text" required placeholder="Örn. Tayfun Pirselimoğlu">
+                        <div class="color-picker">
+                            <span>Arka Plan Rengi</span>
+                            <input id="colorPicker" type="color">
+                        </div>
+                </div>
+                <div class="inputs-bottom-bar">
+                    <button type="reset">Hepsini sil</button>
+                    <button type="submit">Tasarıma Ekle</button>                    
+                </div>
+            </form>
+        </div>
+
+
+        <div class="design-view">
+            <div class="loading-screen">
+                <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div class="design-template">
+
+                <div class="main-design-template">
+                    <div class="header">
+                        <div class="who-send">
+                            <span id="nameMagazine">Serçe</span> dergisinden<br>
+                            <span  id="nameWriter">Esma Kılıç'a</span> sorduk.
+                        </div>
+                        <img src="images/birkitapbirfilmLogo.png" alt="">
+                    </div>
+
+                    <div class="cards">
+                        <div class="card-border">
+                            <div class="card-inner">
+                                <img id="filmURL" src="images/buğday.jpg" alt="">
+                                <h2 id="filmTitle">Buğday</h2>
+                                <h4 id="director">Semih Kaplanoğlu</h4>
+                            </div>
+                        </div>
+                        <div class="card-border">
+                            <div class="card-inner">
+                                <img id="bookURL" src="images/yunus.jpg" alt="">
+                                <h2 id="bookTitle">Yûnus Emre Dîvânı</h2>
+                                <h4 id="writter">Yûnus Emre</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/türgedeb-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="design-bottom-bar">                
+                <button class="capture-image">Çıkart</button>
+            </div>           
+        </div>   
+
+    </div>
+
+    <div style="position: absolute;bottom: 20px;font-family: 'IBM Plex Sans', sans-serif; opacity: 0.4;" >©2021 by Nurullah Kılıç, Istanbul University, Kocaeli, Turkey.</div>
+    <script src="html2canvas.js"></script>
+    <script src='main.js'></script>
+
+</body>
+</html>

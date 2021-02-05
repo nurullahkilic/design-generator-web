@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("font/SFProDisplay-Heavy.woff2") format("woff2"),
+    url("font/SFProDisplay-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("font/SFProDisplay-Regular.woff2") format("woff2"),
+    url("font/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap");
