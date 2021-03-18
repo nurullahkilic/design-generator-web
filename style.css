@@ -526,7 +526,6 @@ body::before {
 
 .main-content > .design-view > .design-template > .main-design-template > img {
   height: 32px;
-  width: 140px;
   margin-bottom: 12px;
   object-fit: cover;
 }
